@@ -15,15 +15,15 @@
 import sys,os
 import re
 import string
-import ConfigParser
+import configparser
 import xml.dom.minidom
 
-import ChipObj
+from . import ChipObj
 from data.PowerData import PowerData
 from utility.util import log
 from utility.util import LogLevel
 from utility.util import sorted_key
-from ModuleObj import ModuleObj
+from .ModuleObj import ModuleObj
 
 class PowerObj(ModuleObj):
     def __init__(self):
